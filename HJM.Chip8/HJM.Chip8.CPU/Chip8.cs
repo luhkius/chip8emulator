@@ -347,9 +347,10 @@ namespace HJM.Chip8.CPU
                         {
                             if ((pixel & (0x80 >> xline)) != 0)
                             {
-                                if (Graphics[(x + xline + ((y + yline) * 64))] == 1)
+                                int index = ((x + xline) % 64) + ((y + yline) % 32 * 64);
+                                if (Graphics[index] == 1)
                                     Registers[0xF] = 1;
-                                Graphics[x + xline + ((y + yline) * 64)] ^= 1;
+                                Graphics[index] ^= 1;
                             }
                         }
                     }
