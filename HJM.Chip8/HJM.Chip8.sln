@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HJM.Chip8.CPU", "HJM.Chip8.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HJM.Chip8.CPU.Tests", "HJM.Chip8.CPU.Tests\HJM.Chip8.CPU.Tests.csproj", "{5130F8A6-B2CA-43DB-B8BA-2B0C21D1F98D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HJM.Chip8.MonoGameUI", "HJM.Chip8.MonoGameUI\HJM.Chip8.MonoGameUI.csproj", "{6A97DD18-F4D0-4D8A-AB38-804E08C14B4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HJM.Chip8.MonoGameUI", "HJM.Chip8.MonoGameUI\HJM.Chip8.MonoGameUI.csproj", "{6A97DD18-F4D0-4D8A-AB38-804E08C14B4D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HJM.Chip8.WPF", "HJM.Chip8.WPF\HJM.Chip8.WPF.csproj", "{E7831701-348D-48CC-8552-537B521AB411}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{6A97DD18-F4D0-4D8A-AB38-804E08C14B4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A97DD18-F4D0-4D8A-AB38-804E08C14B4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A97DD18-F4D0-4D8A-AB38-804E08C14B4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7831701-348D-48CC-8552-537B521AB411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7831701-348D-48CC-8552-537B521AB411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7831701-348D-48CC-8552-537B521AB411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7831701-348D-48CC-8552-537B521AB411}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

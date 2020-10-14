@@ -1,0 +1,20 @@
+﻿<Window x:Name="mainWindow" x:Class="HJM.Chip8.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HJM.Chip8.WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" SizeChanged="Window_SizeChanged" MinWidth="256" MinHeight="128" ResizeMode="CanResize" SizeToContent="Manual" KeyDown="mainWindow_KeyDown" KeyUp="mainWindow_KeyUp" Closing="mainWindow_Closing">
+
+
+    <Grid Background="Black">
+        <StackPanel x:Name="mainPanel">
+            <!--<Border BorderThickness="1" BorderBrush="White">-->
+                <Image x:Name="image" Height="434" Width="800" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+            <!--</Border>-->
+        </StackPanel>
+        
+    </Grid>
+
+</Window>
