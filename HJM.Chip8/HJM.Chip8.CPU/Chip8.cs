@@ -10,10 +10,6 @@ namespace HJM.Chip8.CPU
     public class Chip8
     {
         /// <summary>
-        /// Whether the screen needs to be drawn or not
-        /// </summary>
-        public bool DrawFlag { get; set; }
-        /// <summary>
         /// Whether sound should be played or not 
         /// </summary>
         public bool SoundFlag { get; set; }
@@ -118,7 +114,6 @@ namespace HJM.Chip8.CPU
                         case 0x00E0: //  00E0 - CLS
                                      //  Clear the display.
                             Graphics = new byte[64 * 32];
-                            DrawFlag = true;
                             ProgramCounter += 2;
                             break;
 
@@ -352,14 +347,14 @@ namespace HJM.Chip8.CPU
                         {
                             if ((pixel & (0x80 >> xline)) != 0)
                             {
-                                if (Graphics[(x + xline + ((y + yline) * 64))] == 1)
+                                int index = ((x + xline) % 64) + ((y + yline) % 32 * 64);
+                                if (Graphics[index] == 1)
                                     Registers[0xF] = 1;
-                                Graphics[x + xline + ((y + yline) * 64)] ^= 1;
+                                Graphics[index] ^= 1;
                             }
                         }
                     }
 
-                    DrawFlag = true;
                     ProgramCounter += 2;
                     break;
 
